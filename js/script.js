@@ -27,5 +27,5 @@ function calculate() {
   const math = (4.0 / 3.0) * Math.PI * Math.pow(r, 3)
   // output
   document.getElementById("math").innerHTML =
-    "Numbers: " + math.toFixed(2) + " units"
+    "The volume is: " + math.toFixed(2) + " units³"
 }
