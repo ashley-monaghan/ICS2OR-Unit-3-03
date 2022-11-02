@@ -21,20 +21,10 @@ if (navigator.serviceWorker) {
  */
 function calculate() {
   // input
-  const a = parseInt(document.getElementById("textbox-a").value)
-  const b = parseInt(document.getElementById("textbox-b").value)
-  const c = parseInt(document.getElementById("textbox-c").value)
+  const r = parseInt(document.getElementById("radius").value)
 
   // process
-  const math = a + b + c
+  const math = (4.0/3.0) * Math.PI * Math.pow(r, 3)
   // output
-  document.getElementById("math").innerHTML = "Numbers: " + math + " units"
-}
-
-/**
- * This function displays an alert.
- * Words
- */
-function button() {
-  document.getElementById("words").innerHTML = "<p>Hello, World!</p>"
+  document.getElementById("math").innerHTML = "Numbers: " + math.toFixed(2) + " units"
 }
