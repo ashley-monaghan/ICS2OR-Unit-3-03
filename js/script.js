@@ -24,7 +24,8 @@ function calculate() {
   const r = parseInt(document.getElementById("radius").value)
 
   // process
-  const math = (4.0/3.0) * Math.PI * Math.pow(r, 3)
+  const math = (4.0 / 3.0) * Math.PI * Math.pow(r, 3)
   // output
-  document.getElementById("math").innerHTML = "Numbers: " + math.toFixed(2) + " units"
+  document.getElementById("math").innerHTML =
+    "Numbers: " + math.toFixed(2) + " units"
 }
