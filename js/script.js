@@ -19,13 +19,13 @@ if (navigator.serviceWorker) {
  * This function displays an alert.
  * Math
  */
-function onButtonClicked() {
+function calculate() {
   // input
   const radiusOfSphere = parseInt(document.getElementById("radius").value)
 
   // process
-  const volume = (4.0 / 3.0) * Math.PI * Math.pow(radiusOfSphere, 3)
+  const math = (4.0 / 3.0) * Math.PI * Math.pow(radiusOfSphere, 3)
   // output
-  document.getElementById("volume").innerHTML =
-    "The volume is: " + volume.toFixed(2) + " units³"
+  document.getElementById("math").innerHTML =
+    "The volume is: " + math.toFixed(2) + " units³"
 }
