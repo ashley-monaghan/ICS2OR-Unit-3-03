@@ -19,7 +19,7 @@ if (navigator.serviceWorker) {
  * This function displays an alert.
  * Math
  */
-function calculate() {
+function onButtonClicked() {
   // input
   const radiusOfSphere = parseInt(document.getElementById("radius").value)
 
