@@ -24,8 +24,8 @@ function calculate() {
   const radiusOfSphere = parseInt(document.getElementById("radius").value)
 
   // process
-  const math = (4.0 / 3.0) * Math.PI * Math.pow(radiusOfSphere, 3)
+  const volume = (4.0 / 3.0) * Math.PI * Math.pow(radiusOfSphere, 3)
   // output
-  document.getElementById("math").innerHTML =
-    "The volume is: " + math.toFixed(2) + " units³"
+  document.getElementById("volume").innerHTML =
+    "The volume is: " + volume.toFixed(2) + " units³"
 }
