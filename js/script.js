@@ -21,10 +21,10 @@ if (navigator.serviceWorker) {
  */
 function calculate() {
   // input
-  const r = parseInt(document.getElementById("radius").value)
+  const radiusOfSphere = parseInt(document.getElementById("radius").value)
 
   // process
-  const math = (4.0 / 3.0) * Math.PI * Math.pow(r, 3)
+  const math = (4.0 / 3.0) * Math.PI * Math.pow(radiusOfSphere, 3)
   // output
   document.getElementById("math").innerHTML =
     "The volume is: " + math.toFixed(2) + " units³"
