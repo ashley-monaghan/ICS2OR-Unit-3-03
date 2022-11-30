@@ -21,10 +21,10 @@ if (navigator.serviceWorker) {
  */
 function calculate() {
   // input
-  const radius = parseInt(document.getElementById("radius").value)
+  const Radius = parseInt(document.getElementById("radius").value)
 
   // process
-  const volume = (4.0 / 3.0) * Math.PI * Math.pow(radius, 3)
+  const volume = (4.0 / 3.0) * Math.PI * Math.pow(Radius, 3)
   // output
   document.getElementById("volume").innerHTML =
     "The volume is: " + math.toFixed(2) + " units³"
